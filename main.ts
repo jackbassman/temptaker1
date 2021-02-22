@@ -1,11 +1,11 @@
-radio.onReceivedNumber(function (receivedNumber) {
-	
-})
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(tempF)
 })
 input.onButtonPressed(Button.B, function () {
     basic.showNumber(temp)
+})
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    basic.showNumber(control.deviceSerialNumber())
 })
 let temp = 0
 let tempF = 0
